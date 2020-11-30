@@ -17,4 +17,12 @@ Examples:
 """
 def XO(txt):
     # Your code here
+    xs = txt.count('x')
+    os = txt.count('o')
+    if xs == os:
+        return True
+    else:
+        return False
 
+print(XO("ooxx"))
+print(XO("xooxx"))
